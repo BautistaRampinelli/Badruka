@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.color1 {color: #121c07;}
+.color2 {color: #124b41;}
+.color3 {color: #f17ad8;}
+.color4 {color: #f8b3c0;}
+.color5 {color: #f8efc1;}
+body {
+    background-color: #f8b3c0;
+}
+header {
+    border: #124b41 solid 10px;
+    height: 350px;
+    background-position: center;
+    background-color: transparent;
+    background-image: url(https://media.istockphoto.com/photos/electric-drill-with-drill-bits-screws-on-dark-background-picture-id165886428?k=20&m=165886428&s=612x612&w=0&h=RSR9OOFQRJl7B4tv3nc9xjjyA9fTq-W1eI5V514tRmw=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-size: 100px;
+    font-family: 'Staatliches', cursive; 
+    color: #f8b3c0;
+    padding: 80px;
+    text-align: center;
+}
+li {
+    display: inline;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+main {
+    background-color: #f8b3c0;
+}
+h2 {
+    color: #121c07;
+    font-size: 50px;
+    font-family: 'Staatliches', cursive; 
+    margin: 30px 40px 20px 50px;
+}
+
+
+footer { 
+    margin: 0% 0% 0% 0%;
+    text-align: right;
+    background-color: black;
+    padding: 20px 20px 50px 20px;     
+}
+.card {
+    background-color: #f8efc1;
+    padding: 60px 600px 70px 50px;
+    border: 10px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 50;
+    height: 250px;
+}
+.cardImg {
+    margin: -20px 0px -10px -30px;
+    border: 3px #121c07 solid;
+    width: 150px;
+    height: 150px;
+}
+.cardTitle { 
+    font-family: 'Staatliches', cursive; 
+    font-size: 20px;
+    margin: -140px 0px 20px 130px;
+}
+.cardDescription {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0px -50px 130px;
+}
+.btn {
+    font-size: 20px;
+    font-family: 'Staatliches', cursive; 
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin: 50px -500px 0px 1500px;
+    color: #f8efc1;
+    background-color: #121c07;
+    
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'Staatliches', cursive; 
+    margin: 0px 200px 50px 750px;
+    color: #f8efc1;
+}
+.redes {
+    background-color: none;
+    border: none;
+}
+
+.sections {
+    font-size: 20px;
+    font-family: 'Staatliches', cursive; 
+    background-color: #f8efc1;
+    border: #121c07 double 3px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.mainContacto {
+    background-image: url(https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/283858560_174101295017819_1458470834434083455_n.jpg?stp=dst-jpg_p526x395&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=JCLmxgxbg_8AX-BGdn2&_nc_oc=AQlfbVQuR39CtqU5tag2i-a1C7cEYP25yYKraABXVAUKPySMwG0LpEZJ0qhHnYT9g8M&_nc_ht=scontent.flpg3-1.fna&oh=00_AT-5a3B6E677HJa9ngkLqXjVaB-iIue-3_uq_63dTwOUxw&oe=62C290AC);
+    background-repeat: space;
+    padding: 200px;
+}
+
+.tituloForm {
+    text-align: center;
+}
+form {
+    background-color: #f8efc1;
+    border: #121c07 solid 10px;
+    padding: 100px;
+    margin: 50px 250px 50px 250px;
+}
+label {
+    margin: 25px 50px 150px 50px;
+    padding: 20px;
+    font-size: 20px;
+}
+.mail {
+    margin: 25px 326px 150px 50px;
+}
+.telefono {
+    margin: 25px 234px 150px 50px;
+}
+.nombre {
+    margin: 25px 213px 150px 50px;
+}
+input {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    align-items: center;
+}
+.hombre {
+    margin: 10px 0px 10px 280px;
+}
+.divForm {
+    display: inline; 
+}
+.terminos {
+    margin: 10px 0px 10px 290px;
+}
+.check {
+    margin: 0px 0px 0px 385px;
+}
+.comentarios {
+    text-align: center;
+    margin: 10px 10px 10px 200px;
+}
+textarea {
+    margin: 10px 10px 10px 310px;
+}
+.pForm {
+    text-align: center;
+    align-items: center;
+}
+.enviar {
+    margin: 10px 10px 10px 280px;
+}
+
+select {
+    margin: 10px 240px 10px 295px;
+}
+option {
+    text-align: center;
+    align-items: center;
+} 
