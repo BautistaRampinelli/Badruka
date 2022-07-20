@@ -358,6 +358,10 @@ h1 {
         font-size: 40px;
         margin: 10%;
     }
+    .cardImg:hover {
+        transform: scale(1.5);
+        transition: all 2s;
+    }
     header {
         border: #f8efc1 solid 10px;
     }
