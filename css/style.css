@@ -4,17 +4,42 @@
     box-sizing: border-box;
     list-style: none;
 }
-
 .color1 {color: #121c07;}
 .color2 {color: #124b41;}
 .color3 {color: #f17ad8;}
 .color4 {color: #f8b3c0;}
 .color5 {color: #f8efc1;}
+
+footer {
+    background-color: #121c07;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: footer;
+    margin-bottom: 0%;
+}
+
+.grillaGeneral {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header header" 
+    "main   aside"
+    "footer footer";
+    grid-template-columns: 5fr 2fr;
+}
+aside {
+    grid-area: aside;
+}
+
 body {
+    height: 100%;
+    width: 100%;
     background-color: #f8b3c0;
 }
 header {
-    border: #124b41 solid 10px;
+    width: 100%;
+    grid-area: header;
+    border: #121c07 solid 10px;
     height: 350px;
     background-position: center;
     background-color: transparent;
@@ -29,79 +54,102 @@ h1 {
     padding: 80px;
     text-align: center;
 }
-li {
-    display: inline;
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-left: 170px;
+
+.imgPromo {
+    margin-top: 1%;
+    width: 90%;
+    height: auto;
 }
 
 main {
-    background-color: #f8b3c0;
+    grid-area: main;
 }
 h2 {
     color: #121c07;
     font-size: 50px;
     font-family: 'Staatliches', cursive; 
-    margin: 30px 40px 20px 50px;
 }
-
-
-footer { 
-    margin: 0% 0% 0% 0%;
-    text-align: right;
-    background-color: black;
-    padding: 20px 20px 50px 20px;     
+.destacados {
+    grid-area: destacados;
+}
+.promos {
+    grid-area: promos;
 }
 .card {
+    grid-area: card;
+    margin-left: 3%;
+    margin-top: 1%;
     background-color: #f8efc1;
-    padding: 60px 600px 70px 50px;
+    width: 90%;
     border: 10px solid black;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 50;
-    height: 250px;
+    height: 40%;
+    display: grid;
+    grid-template-areas: 
+    "cardImg cardTitle btn"
+    "cardImg cardDescription btn";
+    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 .cardImg {
-    margin: -20px 0px -10px -30px;
+    grid-area: cardImg;
     border: 3px #121c07 solid;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
 }
 .cardTitle { 
+    text-align: center;
+    grid-area: cardTitle;
     font-family: 'Staatliches', cursive; 
     font-size: 20px;
-    margin: -140px 0px 20px 130px;
 }
+
 .cardDescription {
+    grid-area: cardDescription;
     font-family: 'Roboto', sans-serif;
-    margin: 20px 0px -50px 130px;
 }
 .btn {
+    height: 20%;
+    width: 80%;
+    margin-top: 80%;
+    margin-bottom: 80%;
+    grid-area: btn;
     font-size: 20px;
     font-family: 'Staatliches', cursive; 
     text-align: center;
-    padding: 20px;
     display: block;
-    margin: 50px -500px 0px 1500px;
     color: #f8efc1;
     background-color: #121c07;
-    
 }
 
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 h3 {
+    text-align: center;
+    grid-area: h3;
     font-size: 40px;
     font-family: 'Staatliches', cursive; 
-    margin: 0px 200px 50px 750px;
     color: #f8efc1;
 }
+
 .redes {
+    grid-area: redes;
     background-color: none;
     border: none;
 }
 
+.gridFooter {
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: 
+    "h3"
+    "redes";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
 .sections {
     font-size: 20px;
     font-family: 'Staatliches', cursive; 
@@ -111,71 +159,271 @@ h3 {
     text-align: center;
     color: black;
 }
-.mainContacto {
-    background-image: url(https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/283858560_174101295017819_1458470834434083455_n.jpg?stp=dst-jpg_p526x395&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=JCLmxgxbg_8AX-BGdn2&_nc_oc=AQlfbVQuR39CtqU5tag2i-a1C7cEYP25yYKraABXVAUKPySMwG0LpEZJ0qhHnYT9g8M&_nc_ht=scontent.flpg3-1.fna&oh=00_AT-5a3B6E677HJa9ngkLqXjVaB-iIue-3_uq_63dTwOUxw&oe=62C290AC);
-    background-repeat: space;
-    padding: 200px;
+.bodyContacto {
+    background-image: url(../images/horarios.jpg);
+    height: 1000px;
+}
+.h2Ubicacion {
+    margin-top: 20%;
+}
+.ubicacion {
+    border: #121c07 solid 5px;
+    height: auto;
+    width: 70%;
 }
 
-.tituloForm {
-    text-align: center;
-}
-form {
+.form {
+    margin: 10% 35% 20% 15%;
+    height: 60%;
+    width: 50%;
     background-color: #f8efc1;
-    border: #121c07 solid 10px;
-    padding: 100px;
-    margin: 50px 250px 50px 250px;
+    border: #121c07 solid 20px;
+    display: grid;
+    /*gap: 3px;*/
+    grid-template-areas: 
+    "tituloForm     tituloForm  tituloForm  tituloForm"
+    "nombre         nombre      inputN      inputN"
+    "mail           mail        inputM      inputM"
+    "telefono       telefono    inputT      inputT"
+    "pFormSexo      pFormSexo   pFormSexo   pFormSexo"
+    "divFormH       divFormM    divFormM    divFormO"
+    "inputHombre    inputMujer  inputMujer  inputOtro"
+    "pForm          pForm       select      select"
+    "terminos       terminos    check       check"
+    "comentarios    comentarios textarea    textarea"
+    "reset          reset       enviar      enviar";
+    grid-template-columns: 2fr 1fr 1fr 2fr;
 }
-label {
-    margin: 25px 50px 150px 50px;
-    padding: 20px;
+div {
+    text-align: center;
+} 
+.tituloForm {
+    margin: 0%;
     font-size: 20px;
-}
-.mail {
-    margin: 25px 326px 150px 50px;
-}
-.telefono {
-    margin: 25px 234px 150px 50px;
-}
+    text-align: center;
+    grid-area: tituloForm;
+} 
+
 .nombre {
-    margin: 25px 213px 150px 50px;
+    border: #121c07 solid 1px;
+    grid-area: nombre;
 }
-input {
-    margin: 10px 10px 10px 10px;
-    text-align: center;
-    align-items: center;
+.inputN {
+    border: #121c07 solid 1px;
+    grid-area: inputN;
 }
-.hombre {
-    margin: 10px 0px 10px 280px;
+.inputM {
+    border: #121c07 solid 1px;
+    grid-area: inputM;
 }
-.divForm {
-    display: inline; 
+.inputT {
+    border: #121c07 solid 1px;
+    grid-area: inputT;
 }
-.terminos {
-    margin: 10px 0px 10px 290px;
+.inputHombre {
+    border: #121c07 solid 1px;
+    grid-area: inputHombre;
 }
-.check {
-    margin: 0px 0px 0px 385px;
+.inputMujer {
+    border: #121c07 solid 1px;
+    grid-area: inputMujer;
 }
-.comentarios {
-    text-align: center;
-    margin: 10px 10px 10px 200px;
+.inputOtro {
+    border: #121c07 solid 1px;
+    grid-area: inputOtro;
 }
-textarea {
-    margin: 10px 10px 10px 310px;
+
+.mail {
+    border: #121c07 solid 1px;
+    grid-area: mail;
+}
+
+.telefono {
+    border: #121c07 solid 1px;
+    grid-area: telefono;
+}
+
+.pFormSexo {
+    border: #121c07 solid 1px;
+    grid-area: pFormSexo;
 }
 .pForm {
-    text-align: center;
-    align-items: center;
+    border: #121c07 solid 1px;
+    grid-area: pForm;
+}
+select {
+    border: #121c07 solid 1px;
+    grid-area: select;
+}
+.divFormH {
+    border: #121c07 solid 1px;
+    grid-area: divFormH;
+}
+.divFormM {
+    border: #121c07 solid 1px;
+    grid-area: divFormM;
+}
+.divFormO {
+    border: #121c07 solid 1px;
+    grid-area: divFormO;
+}
+.terminos {
+    border: #121c07 solid 1px;
+    grid-area: terminos;
+}
+.check {
+    border: #121c07 solid 1px;
+    grid-area: check;
+    height: 60%;
+    margin-top: 2%;
+}
+.comentarios {
+    border: #121c07 solid 1px;
+    grid-area: comentarios;
+}
+.textarea {
+    border: #121c07 solid 1px;
+    grid-area: textarea;
 }
 .enviar {
-    margin: 10px 10px 10px 280px;
+    border: #121c07 solid 1px;
+    grid-area: enviar;
+}
+.reset {
+    border: #121c07 solid 1px;
+    grid-area: reset;
 }
 
-select {
-    margin: 10px 240px 10px 295px;
+@media screen and (max-width: 1024px) {
+h1 {
+    font-size: 50px;
 }
-option {
-    text-align: center;
-    align-items: center;
-} 
+.card {
+    justify-content: center;
+    grid-template-areas: 
+    "cardImg cardTitle"
+    "cardImg cardDescription"
+    "btn     btn";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.cardDescription {
+    margin: 2% 5% 2% 2%;
+}
+.btn {
+    width: 30%;
+    height: 50%;
+    margin: 1% 40% 2% 40%;
+}
+.sections {
+    font-size: 15px;
+    border: solid 2px #121c07;
+}
+.cardTitle {
+    text-decoration: underline;
+}
+
+.grillaGeneral {
+    
+    grid-template-areas: 
+    "header"
+    "aside"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
+.form {
+    margin-left: 25%;
+    height: 65%;
+    margin-bottom: 60%;
+}
+}
+
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        color: #f8efc1;
+        padding: 0%;
+        font-size: 40px;
+        margin: 10%;
+    }
+    header {
+        border: #f8efc1 solid 10px;
+    }
+    .sections {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    header nav ul li {
+        margin-top: 25%;
+    }
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .cardDescription {
+        font-size: 0%;
+        color: transparent;
+    }
+    main {
+        background-color: #121c07;
+    }
+    h2 {
+        color: #f8efc1;
+    }
+
+    .card {
+        margin-left: 25%;
+        width: 50%;
+        grid-template-areas: 
+        "cardTitle"
+        "cardImg"
+        "btn"
+        "cardDescription";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 1fr 0fr;
+    }
+    aside {
+        background-color: #121c07;
+    }
+    body {
+        background-color: #121c07;
+    }
+    .btn {
+        text-decoration: none;
+        margin-left: 35%;
+        margin-top: 10%;
+
+    }
+    .cardImg {
+        margin-top: 2%;
+    }
+    .cardTitle {
+        margin-top: 1%;
+    }
+    .gridFooter {
+        margin: none;
+
+    }
+    h3 {
+        color: #121c07;
+    }
+    footer {
+        background-color: #f8efc1;
+        display: block;
+        align-items: center;
+    }
+    .asideContacto {
+        background-image: url(../images/horarios.jpg);
+    }
+    .mainContacto {
+        background-image: url(../images/horarios.jpg);
+    }
+    main form h2 {
+        color: #121c07;
+    }
+}
+

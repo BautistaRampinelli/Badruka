@@ -13,64 +13,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>TIENDA BADRUKA</h1>
-        <nav>
-            <ul>
-                <li><a class="sections" href="../index.html">INICIO</a></li>
-                <li><a class="sections" href="./electrodomesticos.html">ELECTRODOMESTICOS</a></li>
-                <li><a class="sections" href="./herramientasYJardin.html">HERRAMIENTAS Y JARDÍN</a></li>
-                <li><a class="sections" href="./hogar.html">HOGAR</a></li>
-                <li><a class="sections" href="./construccion.html">CONSTRUCCIÓN</a></li>
-                <li><a class="sections" href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="mainContacto">
-        <form class="form">
-            <h2 class="tituloForm"> Complete los siguientes datos para registrarse por favor.</h2>
-            <label class="nombre" for="nombreApellido">Nombre y apellido:</label>	
-            <input type="text" name="nombreApellido" />
-            <br>
-            <label class="mail" for="mail">Mail:</label>
-            <input type="text" name="mail">
-            <br>
-            <label class="telefono" for="telefono">Telefono/celular:</label> 
-            <input type="number" name="telefono">
-            <br>
-            <p class="pForm">Sexo:</p>
-            <div class="divForm hombre">Hombre</div>
-            <input type="radio" name="sexo" value="hombre" />
-            <div class="divForm">Mujer</div>
-            <input type="radio" name="sexo" value="mujer" />
-            <div class="divForm">Otro</div>
-            <input type="radio" name="sexo" value="otro">
-            <p class="pForm">Desea recibir información por:</p>
-            <select name="comunicacion" >
-                <option value="mail">Mail</option>
-                <option value="wsp">Whatsapp</option>
-                <option value="facebook">Facebook</option>
-                <option value="no">No deseo recibir información</option>
-            </select>
-            <br>
-            <div class="terminos">Acepta términos y condiciones</div>
-            <input class="check" type="checkbox" name="acepta" value="1" />
-            <br>
-            <label class="comentarios" for="comentarios">Si desea puede dejar alguna duda o comentario</label>
-            <textarea name="comentarios"></textarea>
-            <br>
-            <input class="enviar" type="submit" value="Enviar formulario"/>
-            <input type="reset" value="Limpiar formulario"/>
-        </form>
-    </main>
-    <footer>
-        <h3>REDES SOCIALES</h3>
-        <ul>
-            <li><a class="redes" href="https://www.facebook.com/Badruka-101548745606408" target="_blank"><img src="../images/logoFacebook.svg" alt="Logo de Facebook"></a></li>
-            <li><a class="redes" href="https://api.whatsapp.com/send?phone=5492213643878&app=facebook&entry_point=page_cta&fbclid=IwAR0kBIVri38VLqJFBv-Dkjs-bRQAlHpVgKvKjq93c_VglM3V4Qi2xPGg-9M" target="_blank"><img src="../images/logoWsp.svg" alt=""></a></li>
-            <li><a class="redes" href="https://www.instagram.com/tienda.badruka/" target="_blank"><img src="../images/logoInstagram.svg" alt=""></a></li>
-        </ul>
-    </footer>
+<body class="bodyContacto">
+    <div class="grillaGeneral">
+        <header>
+            <h1>TIENDA BADRUKA</h1>
+            <nav>
+                <ul>
+                    <li><a class="sections" href="../index.html">INICIO</a></li>
+                    <li><a class="sections" href="./electrodomesticos.html">ELECTRODOMESTICOS</a></li>
+                    <li><a class="sections" href="./herramientasYJardin.html">HERRAMIENTAS Y JARDÍN</a></li>
+                    <li><a class="sections" href="./hogar.html">HOGAR</a></li>
+                    <li><a class="sections" href="./construccion.html">CONSTRUCCIÓN</a></li>
+                    <li><a class="sections" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainContacto">
+            <form class="form">
+                <h2 class="tituloForm"> Complete los siguientes datos para registrarse por favor.</h2>
+                <label class="nombre" for="nombreApellido">Nombre y apellido:</label>	
+                <input class="inputN" type="text" name="nombreApellido" />
+                <label class="mail" for="mail">Mail:</label>
+                <input class="inputM" type="text" name="mail">
+                <label class="telefono" for="telefono">Telefono/celular:</label> 
+                <input class="inputT" type="number" name="telefono">
+                <p class="pFormSexo">Sexo:</p>
+                <div class="divFormH">Hombre</div>
+                <input class="inputHombre" type="radio" name="sexo" value="hombre" />
+                <div class="divFormM">Mujer</div>
+                <input class="inputMujer" type="radio" name="sexo" value="mujer" />
+                <div class="divFormO">Otro</div>
+                <input class="inputOtro" type="radio" name="sexo" value="otro">
+                <p class="pForm">Desea recibir información por:</p>
+                <select name="comunicacion" >
+                    <option value="mail">Mail</option>
+                    <option value="wsp">Whatsapp</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="no">No deseo recibir información</option>
+                </select>
+                <div class="terminos">Acepta términos y condiciones</div>
+                <input class="check" type="checkbox" name="acepta" value="1" />
+                <label class="comentarios" for="comentarios">Si desea puede dejar alguna duda o comentario</label>
+                <textarea class="textarea" name="comentarios"></textarea>
+                <input class="enviar" type="submit" value="Enviar formulario"/>
+                <input class="reset" type="reset" value="Limpiar formulario"/>
+            </form>
+        </main>
+        <aside class="asideContacto">
+            <h2 class="h2Ubicacion"> UBICACIÓN </h2>
+            <a href="#"><img class="ubicacion" src="https://elcomercio.pe/resizer/-MaDAekHsbxyrBwB4m4xw5d1aRs=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/UAGOCODQDJDNRG7KSJ7Z3PTJ2E.jpg" alt="ubicacion"></a>
+        </aside>
+        <footer>
+            <div class="gridFooter">
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                    <li><a class="redes" href="https://www.facebook.com/Badruka-101548745606408" target="_blank"><img src="../images/logoFacebook.svg" alt="Logo de Facebook"></a></li>
+                    <li><a class="redes" href="https://api.whatsapp.com/send?phone=5492213643878&app=facebook&entry_point=page_cta&fbclid=IwAR0kBIVri38VLqJFBv-Dkjs-bRQAlHpVgKvKjq93c_VglM3V4Qi2xPGg-9M" target="_blank"><img src="../images/logoWsp.svg" alt=""></a></li>
+                    <li><a class="redes" href="https://www.instagram.com/tienda.badruka/" target="_blank"><img src="../images/logoInstagram.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
