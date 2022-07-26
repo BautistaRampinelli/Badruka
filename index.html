@@ -12,35 +12,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body> 
     <div class="grillaGeneral">
         <header>
             <h1>TIENDA BADRUKA</h1>
-            <nav>
-                <ul>
-                    <li><a class="sections inicio" href="./index.html">INICIO</a></li>
-                    <li><a class="sections electro" href="./sections/electrodomesticos.html">ELECTRODOMESTICOS</a></li>
-                    <li><a class="sections herramientasYJardin" href="./sections/herramientasYJardin.html">HERRAMIENTAS Y JARDÍN</a></li>
-                    <li><a class="sections hogar" href="./sections/hogar.html">HOGAR</a></li>
-                    <li><a class="sections construccion" href="./sections/construccion.html">CONSTRUCCIÓN</a></li>
-                    <li><a class="sections contacto" href="./sections/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active sections" aria-current="page" href="./index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./sections/electrodomesticos.html">ELECTRODOMÉSTICOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./sections/herramientasYJardin.html">HERRAMIENTAS Y JARDÍN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./sections/construccion.html">CONSTRUCCIÓN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./sections/hogar.html">HOGAR</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./sections/contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
+        <section class="car">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="carouselImg" src="./images/torno.png" class="d-block w-100" alt="Cortacerco a combustión">
+              </div>
+              <div class="carousel-item">
+                <img class="carouselImg" src="./images/smartTV.png" class="d-block w-100" alt="torno para madera">
+              </div>
+              <div class="carousel-item">
+                <img class="carouselImg" src="./images/calefactorExterior.png" class="d-block w-100" alt="Caja de herramientas más taladro">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </section>
         <main>
             <h2 class="destacados">DESTACADOS</h2>
             <div class="card">
                 <img class="cardImg" src="./images/termosColeman.jpg" alt="Termos Coleman">
                 <p class="cardTitle">Termo Coleman</p>
                 <p class="cardDescription">⚡Termos Acero Inoxidable Coleman: ☑️700 ml (Azul y Rojo) ☑️700 ml (Azul y Rojo) + Mate Termico ☑️1200 ml (Verde y Rojo) ☑️1200 ml (Verde y Rojo) + Mate termico. Garantía de por Vida - 37 hs caliente🌡️ - 66 hs frio❄️garantia oficial </p>
-                <a href="#" class="btn">COMPRAR</a>
+                <button type="button" class="btn btnComp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="./images/carrito.png" alt="carrito de compra">
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ¿Está seguro/a de añadir el siguiente producto a su carrito?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Si, añadir</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div> 
             <div class="card">
                 <img class="cardImg" src="./images/estufaGarrafaInfrarroja.jpg" alt="Estufa a garrafa">
                 <p class="cardTitle">Estufa Garrafa Infrarroja</p>
                 <p class="cardDescription">⚡⚡ Estufa Garrafera Infrarroja Lusqtoff ✔️Potencia Variable 4200w-2750w-1500w✔️Corte Por Volcamiento✔️Piloto Analizador De Ambiente✔️Encendido Piezoeléctrico✔️Uso Exclusivo Garrafa✔️Ruedas P/Transporte✔️24 Meses De Garantía </p>
-                <a href="#" class="btn">COMPRAR</a>
+                <button type="button" class="btn btnComp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="./images/carrito.png" alt="carrito de compra">
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ¿Está seguro/a de añadir el siguiente producto a su carrito?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Si, añadir</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
         </main>
         <aside>
@@ -58,5 +145,6 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

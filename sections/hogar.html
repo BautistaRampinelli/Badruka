@@ -8,25 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="grillaGeneral">
         <header>
             <h1>TIENDA BADRUKA</h1>
-            <nav>
-                <ul>
-                    <li><a class="sections" href="../index.html">INICIO</a></li>
-                    <li><a class="sections" href="./electrodomesticos.html">ELECTRODOMESTICOS</a></li>
-                    <li><a class="sections" href="./herramientasYJardin.html">HERRAMIENTAS Y JARDÍN</a></li>
-                    <li><a class="sections" href="./hogar.html">HOGAR</a></li>
-                    <li><a class="sections" href="./construccion.html">CONSTRUCCIÓN</a></li>
-                    <li><a class="sections" href="./contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  sections"  href="./electrodomesticos.html">ELECTRODOMESTICOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./herramientasYJardin.html">HERRAMIENTAS Y JARDÍN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections active" aria-current="page" href="./hogar.html">HOGAR</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./construccion.html">CONSTRUCCIÓN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link sections" href="./contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
             <section>
@@ -35,8 +55,55 @@
                     <img class="cardImg" src="../Images/termosColeman.jpg" alt="Termos Coleman rojo y negro">
                     <p class="cardTitle">TERMOS COLEMAN</p>
                     <p class="cardDescription">⚡Termos Acero Inoxidable Coleman: ☑️700 ml (Azul y Rojo) ☑️700 ml (Azul y Rojo) + Mate Termico ☑️1200 ml (Verde y Rojo) ☑️1200 ml (Verde y Rojo) + Mate termico. Garantía de por Vida - 37 hs caliente🌡️ - 66 hs frio❄️garantia oficial</p>
-                    <a href="#" class="btn">COMPRAR</a>
+                    <button type="button" class="btn btnComp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="../images/carrito.png" alt="carrito de compra">
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            ¿Está seguro/a de añadir el siguiente producto a su carrito?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Si, añadir</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
+                <div class="card">
+                  <img class="cardImg" src="../Images/piletaPelopincho.png" alt="pileta pelopincho azul">
+                  <p class="cardTitle">PILETA SOL DE VERANO</p>
+                  <p class="cardDescription">⚡⚡ Piletas Sol de Verano 🌞
+                    ⚡2700L✔️2.50m X 1.65m X 0.65m - 12 cuotas sin interes de $1799
+                    ⚡4620L✔️3.00m X 2.20m X 0.70m - 12 cuotas sin interes de $2499
+                    ⚡7800L✔️4.40m X 2.20m X 0.80m - 12 cuotas sin interes de $3699</p>
+                  <button type="button" class="btn btnComp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../images/carrito.png" alt="carrito de compra">
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ¿Está seguro/a de añadir el siguiente producto a su carrito?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="button" class="btn btn-primary">Si, añadir</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </section>
         </main>
         <aside>
@@ -54,5 +121,6 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
