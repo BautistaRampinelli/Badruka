@@ -1,0 +1,109 @@
+main {
+    grid-area: main;
+    @include phone {
+        background-color: $color-2;
+    }
+    h2 {
+        color: $color-2;
+        font-size: 50px;
+        font-family: $fontPrincipal;
+        grid-area: destacados;
+        @include phone {
+            color: $color-5;
+        }
+    }
+    .card {
+        grid-area: card;
+        margin-left: 3%;
+        margin-top: 1%;
+        background-color: $color-5;
+        width: 90%;
+        border: 10px solid $color-2;
+        height: 40%;
+        display: grid;
+        grid-template-areas: 
+        "cardImg cardTitle btn"
+        "cardImg cardDescription btn";
+        grid-template-columns: 2fr 6fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        @include tablet {
+            justify-content: center;
+            grid-template-areas: 
+            "cardImg cardTitle"
+            "cardImg cardDescription"
+            "btn     btn";
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 2fr 1fr;
+        }
+        @include phone {
+            border: $color-3 solid 4px;
+            height: 40%;
+            margin-left: 13%;
+            width: 75%;
+            grid-template-areas: 
+            "cardTitle"
+            "cardImg"
+            "btn"
+            "cardDescription";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr 1fr 0fr;
+        }
+        .cardImg {
+            grid-area: cardImg;
+            border: 3px $color-2 solid;
+            width: 100%;
+            height: 100%;
+            @include phone {
+                margin-top: 2%;
+            }
+            &:hover {
+                transform: scale(2) translateX(100px);
+                transition: all 2s;
+                @include phone {
+                    transform: scale(1.5);
+                    transition: all 2s;
+                }
+            }
+        }
+        .cardTitle {
+            text-align: center;
+            grid-area: cardTitle;
+            font-family: $fontPrincipal; 
+            font-size: 20px;
+            @include tablet {
+                text-decoration: underline;
+            }
+            @include phone {
+                margin-top: 1%;
+            }
+        }
+        .cardDescription {
+            grid-area: cardDescription;
+            font-family: $fontSecundary;
+            @include tablet {
+                margin: 2% 5% 2% 2%;
+            }
+            @include phone {
+                font-size: 0%;
+                color: transparent;
+            }
+        }
+        .btnComp {
+            display: flex;
+            justify-content: center;
+            background-color: $color-2;
+            height: 25%;
+            width: 65%;
+            margin: 100% 0% -200% 20%;
+            grid-area: btn;
+            @include tablet {
+                width: 60%;
+                height: 65%;
+                margin: 2% 0% 0% 20%;
+            }
+            @include phone {
+                margin-top: 6%;
+            }
+        }
+    }
+}

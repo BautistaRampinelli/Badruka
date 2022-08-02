@@ -1,0 +1,50 @@
+footer {
+    background-color: $color-2;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: footer;
+    margin-bottom: 0%;
+    @include phone {
+        background-color: $color-5;
+        display: block;
+        align-items: center;
+    }
+    .gridFooter {
+        margin-right: 5%;
+        display: grid;
+        grid-template-areas: 
+        "h3"
+        "redes";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        @include phone {
+            margin: none;
+        }
+        h3{
+            text-align: center;
+            grid-area: h3;
+            font-size: 40px;
+            font-family: $fontPrincipal; 
+            color: $color-5;
+            @include phone {
+                color: $color-2;
+            }
+        }
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            li{
+                &:hover {
+                    transform: scale(1.5);
+                    transition: all 1s;
+                }
+                .redes{
+                    grid-area: redes;
+                    background-color: none;
+                    border: none;
+                }
+            }
+        }
+    }
+}

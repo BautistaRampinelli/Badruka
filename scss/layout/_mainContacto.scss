@@ -1,0 +1,154 @@
+.bodyContacto {
+    background-image: url(../images/horarios.jpg);
+    height: 1000px;
+}
+.mainContacto {
+    @include phone {
+        background-image: url(../images/horarios.jpg);
+    }
+    .form {
+        margin: 10% 35% 20% 15%;
+        height: 75%;
+        width: 60%;
+        background-color: #f8efc1;
+        border: #384d44 solid 20px;
+        display: grid;
+        grid-template-areas: 
+        "tituloForm     tituloForm  tituloForm  tituloForm"
+        "nombre         nombre      inputN      inputN"
+        "mail           mail        inputM      inputM"
+        "telefono       telefono    inputT      inputT"
+        "pFormSexo      pFormSexo   pFormSexo   pFormSexo"
+        "divFormH       divFormM    divFormM    divFormO"
+        "inputHombre    inputMujer  inputMujer  inputOtro"
+        "pForm          pForm       select      select"
+        "terminos       terminos    check       check"
+        "comentarios    comentarios textarea    textarea"
+        "reset          reset       enviar      enviar";
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        @include tablet {
+            margin-left: 25%;
+            height: 65%;
+            margin-bottom: 60%;
+        }
+        @include phone {
+            height: 80%;
+            width: 90%;
+            margin: 14% 10% 50% 5%;
+        }
+        .tituloForm {
+            margin: 0%;
+            font-size: 20px;
+            text-align: center;
+            grid-area: tituloForm;
+            @include phone {
+                color: $color-2;
+            }
+        }
+        .nombre {
+            border: $color-2 solid 1px;
+            grid-area: nombre
+        }
+        .inputN {
+            border: $color-2 solid 1px;
+            grid-area: inputN;
+        }
+        .mail {
+            border: $color-2 solid 1px;
+            grid-area: mail;
+        }
+        .inputM {
+            border: $color-2 solid 1px;
+            grid-area: inputM;
+        }
+        .telefono {
+            border: $color-2 solid 1px;
+            grid-area: telefono;
+        }
+        .inputT {
+            border: $color-2 solid 1px;
+            grid-area: inputT;
+        }
+        .pFormSexo {
+            border: $color-2 solid 1px;
+            grid-area: pFormSexo;
+        }
+        .divFormH {
+            border: $color-2 solid 1px;
+            grid-area: divFormH;
+        }
+        .inputHombre {
+            border: $color-2 solid 1px;
+            grid-area: inputHombre;
+        }
+        .divFormM {
+            border: $color-2 solid 1px;
+            grid-area: divFormM;
+        }
+        .inputMujer {
+            border: $color-2 solid 1px;
+            grid-area: inputMujer;
+        }
+        .divFormO {
+            border: $color-2 solid 1px;
+            grid-area: divFormO;
+        }
+        .inputOtro {
+            border: $color-2 solid 1px;
+            grid-area: inputOtro;
+        }
+        .pForm {
+            border: $color-2 solid 1px;
+            grid-area: pForm;
+        }
+        select {
+            border: $color-2 solid 1px;
+            grid-area: select;
+        }
+        .terminos {
+            border: $color-2 solid 1px;
+            grid-area: terminos;
+        }
+        .check {
+            border: $color-2 solid 1px;
+            grid-area: check;
+            height: 60%;
+            margin-top: 2%;
+        }
+        .comentarios{
+            border: $color-2 solid 1px;
+            grid-area: comentarios;
+        }
+        .textarea{
+            border: $color-2 solid 1px;
+            grid-area: textarea;
+        }
+        .enviar{
+            border: $color-2 solid 1px;
+            grid-area: enviar;
+        }
+        .reset{
+            border: $color-2 solid 1px;
+            grid-area: reset;
+        }
+    }
+}
+.asideContacto {
+    grid-area: aside;
+    @include phone {
+        background-image: url(../images/horarios.jpg);
+    }
+    .h2Ubicacion {
+        margin-top: 20%;
+        color: $color-5;
+        font-size: 50px;
+        font-family: $fontPrincipal; 
+    }
+    a {
+        .ubicacion {
+            border: $color-2 solid 5px;
+            height: auto;
+            width: 70%;
+        }
+    }
+}

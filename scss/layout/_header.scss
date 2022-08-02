@@ -1,0 +1,96 @@
+header {
+    width: 100%;
+    grid-area: header;
+    border: $color-2 solid 10px;
+    height: 350px;
+    background-position: center;
+    background-color: transparent;
+    background-image: url(https://media.istockphoto.com/photos/electric-drill-with-drill-bits-screws-on-dark-background-picture-id165886428?k=20&m=165886428&s=612x612&w=0&h=RSR9OOFQRJl7B4tv3nc9xjjyA9fTq-W1eI5V514tRmw=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: header;
+    @include tablet {
+        height: 280px;
+    }
+    @include phone {
+        border: $color-5 solid 10px;
+    }
+    h1 {
+        font-size: 100px;
+        font-family: 'Staatliches', cursive; 
+        color: $color-3;
+        padding: 80px;
+        text-align: center;
+        @include tablet {
+            padding: 0%;
+            margin: 12% 10% 10% 10%;
+            font-size: 60px;
+        }
+        @include phone {
+            color: $color-5;
+            padding: 0%;
+            font-size: 40px;
+            margin: 20% 10% 28% 10%;
+        }
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 2;
+        margin-top: -2%;
+        @include tablet {
+            margin: -29% 0% 0% 1%;
+        }
+        @include phone {
+            margin: -55% 0% 0% 1%;
+        }
+        .container-fluid {
+            .navbar-toggler {
+                @include tablet {
+                    background-color: $color-3;
+                }
+                @include phone {
+                    background-color: $color-5;
+                }
+            }
+            .collapse {
+                .navbar-nav{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                    width: 100%;
+                    @include tablet {
+                        flex-flow: column;
+                        width: 25%;
+                    }
+                    @include phone {
+                        width: 50%;
+                    }
+                    li {
+                        &:hover{
+                            transform: scale(1.5);
+                            transition: all 1s;
+                        }
+                        .sections {
+                            font-size: 20px;
+                            font-family: 'Staatliches', cursive; 
+                            background-color: $color-5;
+                            border: $color-2 double 3px;
+                            text-decoration: none;
+                            text-align: center;
+                            color: $color-2;
+                            &:hover {
+                                color: $color-2;
+                                text-decoration: none;
+                            }
+                            @include tablet {
+                                font-size: 15px;
+                                border: solid 2px $color-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

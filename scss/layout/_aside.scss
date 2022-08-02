@@ -1,0 +1,23 @@
+aside {
+    grid-area: aside;
+    @include phone {
+        background-color: $color-2;
+    }
+    .promos {
+        color: $color-2;
+        font-size: 50px;
+        font-family: $fontPrincipal; 
+        grid-area: promos;
+        @include phone {
+            color: $color-5;
+        }
+    }
+    .imgPromo {
+        margin-top: 1%;
+        width: 90%;
+        height: auto;
+        @include tablet {
+            width: 80%;
+        }
+    }
+}

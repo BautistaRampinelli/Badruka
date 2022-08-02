@@ -1,0 +1,42 @@
+@import"./utilities/variables";
+@import"./utilities/breakpoints";
+@import"./layout/reset";
+@import"./layout/header";
+@import"./layout/main";
+@import"./layout/footer";
+@import"./utilities/extends";
+@import"./layout/aside";
+@import"./layout/sectionIndex";
+@import"./layout/mainContacto";
+
+
+body { 
+    height: 100%;
+    width: 100%;
+    background-color: $color-3;
+    @include phone {
+        background-color: $color-2;
+    }
+    .grillaGeneral {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "header header"
+        "car car" 
+        "main   aside"
+        "footer footer";
+        grid-template-columns: 5fr 2fr;
+        @include tablet {
+            grid-template-areas: 
+            "header"
+            "car"
+            "aside"
+            "main"
+            "footer";
+            grid-template-columns: 1fr;
+        }
+    }
+}
+div {
+    text-align: center;
+}

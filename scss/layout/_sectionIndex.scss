@@ -1,0 +1,28 @@
+.car {
+    z-index: 1;
+    background-image: url(../images/fondoCarrousel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: car;
+    .carousel {
+        .carousel-indicators {
+            margin-bottom: -2rem;
+        }
+        div {
+            div {
+                .carouselImg {
+                    height: auto;
+                    width: 30%;
+                    @include tablet {
+                        height: auto;
+                        width: 40%;
+                    }
+                    @include phone {
+                        height: auto;
+                        width: 60%;   
+                    }
+                }
+            }
+        }
+    }
+}
