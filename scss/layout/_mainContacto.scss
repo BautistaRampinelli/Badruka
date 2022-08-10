@@ -50,85 +50,85 @@
             grid-area: nombre
         }
         .inputN {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: inputN;
         }
         .mail {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: mail;
         }
         .inputM {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: inputM;
         }
         .telefono {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: telefono;
         }
         .inputT {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: inputT;
         }
         .pFormSexo {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: pFormSexo;
         }
         .divFormH {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: divFormH;
         }
         .inputHombre {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: inputHombre;
         }
         .divFormM {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: divFormM;
         }
         .inputMujer {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: inputMujer;
         }
         .divFormO {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: divFormO;
         }
         .inputOtro {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: inputOtro;
         }
         .pForm {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: pForm;
         }
         select {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: select;
         }
         .terminos {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: terminos;
         }
         .check {
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: check;
             height: 60%;
             margin-top: 2%;
         }
         .comentarios{
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: comentarios;
         }
         .textarea{
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: textarea;
         }
         .enviar{
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: enviar;
         }
         .reset{
-            border: $color-2 solid 1px;
+            @extend .nombre;
             grid-area: reset;
         }
     }
