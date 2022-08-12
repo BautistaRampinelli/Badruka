@@ -91,93 +91,104 @@ main {
   @media screen and (max-width: 600px) {
     main {
       background-color: #384d44; } }
-  main h2 {
-    color: #384d44;
-    font-size: 50px;
-    font-family: "Staatliches", cursive;
-    grid-area: destacados; }
-    @media screen and (max-width: 600px) {
-      main h2 {
-        color: #f8efc1; } }
-  main .card {
-    grid-area: card;
-    margin-left: 3%;
-    margin-top: 1%;
-    background-color: #f8efc1;
-    width: 90%;
-    border: 10px solid #384d44;
-    height: 40%;
-    display: grid;
-    grid-template-areas: "cardImg cardTitle btn" "cardImg cardDescription btn";
-    grid-template-columns: 2fr 6fr 1fr;
-    grid-template-rows: 1fr 2fr; }
-    @media screen and (max-width: 992px) {
-      main .card {
-        justify-content: center;
-        grid-template-areas: "cardImg cardTitle" "cardImg cardDescription" "btn     btn";
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 2fr 1fr; } }
-    @media screen and (max-width: 600px) {
-      main .card {
-        border: #e16c4e solid 4px;
-        height: 40%;
-        margin-left: 13%;
-        width: 75%;
-        grid-template-areas: "cardTitle" "cardImg" "btn" "cardDescription";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 1fr 0fr; } }
-    main .card .cardImg {
-      grid-area: cardImg;
-      border: 3px #384d44 solid;
-      width: 100%;
-      height: 100%; }
-      @media screen and (max-width: 600px) {
-        main .card .cardImg {
-          margin-top: 2%; } }
-      main .card .cardImg:hover {
-        transform: scale(2) translateX(100px);
-        transition: all 2s; }
-        @media screen and (max-width: 600px) {
-          main .card .cardImg:hover {
-            transform: scale(1.5);
-            transition: all 2s; } }
-    main .card .cardTitle {
-      text-align: center;
-      grid-area: cardTitle;
+  main section {
+    gap: 3px;
+    grid-template-areas: "destacados" "card"; }
+    main section h2 {
+      color: #384d44;
+      font-size: 50px;
       font-family: "Staatliches", cursive;
-      font-size: 20px; }
-      @media screen and (max-width: 992px) {
-        main .card .cardTitle {
-          text-decoration: underline; } }
+      grid-area: destacados; }
       @media screen and (max-width: 600px) {
-        main .card .cardTitle {
-          margin-top: 1%; } }
-    main .card .cardDescription {
-      grid-area: cardDescription;
-      font-family: "Roboto", sans-serif; }
+        main section h2 {
+          color: #f8efc1; } }
+    main section .card {
+      grid-area: card;
+      margin-left: 3%;
+      margin-top: 1%;
+      background-color: #f8efc1;
+      width: 90%;
+      border: 10px solid #384d44;
+      height: 40%;
+      display: grid;
+      grid-template-areas: "cardImg cardTitle btn" "cardImg cardDescription btn";
+      grid-template-columns: 2fr 6fr 1fr;
+      grid-template-rows: 1fr 2fr; }
       @media screen and (max-width: 992px) {
-        main .card .cardDescription {
-          margin: 2% 5% 2% 2%; } }
+        main section .card {
+          margin-top: 20px;
+          justify-content: center;
+          grid-template-areas: "cardImg cardTitle" "cardImg cardDescription" "btn     btn";
+          grid-template-columns: 1fr 2fr;
+          grid-template-rows: 1fr 2fr 1fr; } }
       @media screen and (max-width: 600px) {
-        main .card .cardDescription {
-          font-size: 0%;
-          color: transparent; } }
-    main .card .btnComp {
-      display: flex;
-      justify-content: center;
-      background-color: #384d44;
-      height: 25%;
-      width: 65%;
-      margin: 100% 0% -200% 20%;
-      grid-area: btn; }
-      @media screen and (max-width: 992px) {
-        main .card .btnComp {
-          width: 60%;
-          height: 65%;
-          margin: 2% 0% 0% 20%; } }
-      @media screen and (max-width: 600px) {
-        main .card .btnComp {
-          margin-top: 6%; } }
+        main section .card {
+          border: #e16c4e solid 4px;
+          height: 40%;
+          margin-left: 13%;
+          width: 75%;
+          grid-template-areas: "cardTitle" "cardImg" "btn" "cardDescription";
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 3fr 1fr 0fr; } }
+      main section .card .cardImg {
+        grid-area: cardImg;
+        border: 3px #384d44 solid;
+        width: 100%;
+        height: 100%; }
+        @media screen and (max-width: 600px) {
+          main section .card .cardImg {
+            margin-top: 2%; } }
+        main section .card .cardImg:hover {
+          transform: scale(2) translateX(100px);
+          transition: all 2s; }
+          @media screen and (max-width: 600px) {
+            main section .card .cardImg:hover {
+              transform: scale(1.5);
+              transition: all 2s; } }
+      main section .card .cardTitle {
+        text-align: center;
+        grid-area: cardTitle;
+        font-family: "Staatliches", cursive;
+        font-size: 30px; }
+        @media screen and (max-width: 992px) {
+          main section .card .cardTitle {
+            font-size: 25px;
+            text-decoration: underline; } }
+        @media screen and (max-width: 600px) {
+          main section .card .cardTitle {
+            margin-top: 1%; } }
+      main section .card .cardDescription {
+        grid-area: cardDescription;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px; }
+        @media screen and (max-width: 992px) {
+          main section .card .cardDescription {
+            font-size: 15px;
+            margin: 2% 5% 2% 2%; } }
+        @media screen and (max-width: 600px) {
+          main section .card .cardDescription {
+            font-size: 0%;
+            color: transparent; } }
+      main section .card .btnComp {
+        display: flex;
+        justify-content: center;
+        background-color: #384d44;
+        height: 25%;
+        width: 65%;
+        margin: 100% 0% -200% 20%;
+        grid-area: btn; }
+        @media screen and (max-width: 992px) {
+          main section .card .btnComp {
+            width: 60%;
+            height: 65%;
+            margin: 2% 0% 0% 20%; } }
+        @media screen and (max-width: 600px) {
+          main section .card .btnComp {
+            margin-top: 6%; } }
+
+@media screen and (max-width: 600px) {
+  .electrodomesticos {
+    font-size: 30px; } }
 
 footer {
   background-color: #384d44;
@@ -296,70 +307,50 @@ aside {
     @media screen and (max-width: 600px) {
       .mainContacto .form .tituloForm {
         color: #384d44; } }
-  .mainContacto .form .nombre {
+  .mainContacto .form .nombre, .mainContacto .form .inputN, .mainContacto .form .mail, .mainContacto .form .inputM, .mainContacto .form .telefono, .mainContacto .form .inputT, .mainContacto .form .pFormSexo, .mainContacto .form .divFormH, .mainContacto .form .inputHombre, .mainContacto .form .divFormM, .mainContacto .form .inputMujer, .mainContacto .form .divFormO, .mainContacto .form .inputOtro, .mainContacto .form .pForm, .mainContacto .form select, .mainContacto .form .terminos, .mainContacto .form .check, .mainContacto .form .comentarios, .mainContacto .form .textarea, .mainContacto .form .enviar, .mainContacto .form .reset {
     border: #384d44 solid 1px;
     grid-area: nombre; }
   .mainContacto .form .inputN {
-    border: #384d44 solid 1px;
     grid-area: inputN; }
   .mainContacto .form .mail {
-    border: #384d44 solid 1px;
     grid-area: mail; }
   .mainContacto .form .inputM {
-    border: #384d44 solid 1px;
     grid-area: inputM; }
   .mainContacto .form .telefono {
-    border: #384d44 solid 1px;
     grid-area: telefono; }
   .mainContacto .form .inputT {
-    border: #384d44 solid 1px;
     grid-area: inputT; }
   .mainContacto .form .pFormSexo {
-    border: #384d44 solid 1px;
     grid-area: pFormSexo; }
   .mainContacto .form .divFormH {
-    border: #384d44 solid 1px;
     grid-area: divFormH; }
   .mainContacto .form .inputHombre {
-    border: #384d44 solid 1px;
     grid-area: inputHombre; }
   .mainContacto .form .divFormM {
-    border: #384d44 solid 1px;
     grid-area: divFormM; }
   .mainContacto .form .inputMujer {
-    border: #384d44 solid 1px;
     grid-area: inputMujer; }
   .mainContacto .form .divFormO {
-    border: #384d44 solid 1px;
     grid-area: divFormO; }
   .mainContacto .form .inputOtro {
-    border: #384d44 solid 1px;
     grid-area: inputOtro; }
   .mainContacto .form .pForm {
-    border: #384d44 solid 1px;
     grid-area: pForm; }
   .mainContacto .form select {
-    border: #384d44 solid 1px;
     grid-area: select; }
   .mainContacto .form .terminos {
-    border: #384d44 solid 1px;
     grid-area: terminos; }
   .mainContacto .form .check {
-    border: #384d44 solid 1px;
     grid-area: check;
     height: 60%;
     margin-top: 2%; }
   .mainContacto .form .comentarios {
-    border: #384d44 solid 1px;
     grid-area: comentarios; }
   .mainContacto .form .textarea {
-    border: #384d44 solid 1px;
     grid-area: textarea; }
   .mainContacto .form .enviar {
-    border: #384d44 solid 1px;
     grid-area: enviar; }
   .mainContacto .form .reset {
-    border: #384d44 solid 1px;
     grid-area: reset; }
 
 .asideContacto {
