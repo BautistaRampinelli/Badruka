@@ -7,15 +7,15 @@
 header {
   width: 100%;
   grid-area: header;
-  border: #384d44 solid 10px;
+  border: #3e594c solid 10px;
   height: 350px;
   background-position: center;
   background-color: transparent;
-  background-image: url(https://media.istockphoto.com/photos/electric-drill-with-drill-bits-screws-on-dark-background-picture-id165886428?k=20&m=165886428&s=612x612&w=0&h=RSR9OOFQRJl7B4tv3nc9xjjyA9fTq-W1eI5V514tRmw=);
+  background-image: url(../images/fondoHeader.png);
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: header; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     header {
       height: 280px; } }
   @media screen and (max-width: 600px) {
@@ -24,10 +24,10 @@ header {
   header h1 {
     font-size: 100px;
     font-family: 'Staatliches', cursive;
-    color: #e16c4e;
+    color: #e96a4a;
     padding: 80px;
     text-align: center; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       header h1 {
         padding: 0%;
         margin: 12% 10% 10% 10%;
@@ -43,15 +43,15 @@ header {
     justify-content: space-evenly;
     z-index: 2;
     margin-top: -2%; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       header .navbar {
         margin: -29% 0% 0% 1%; } }
     @media screen and (max-width: 600px) {
       header .navbar {
         margin: -55% 0% 0% 1%; } }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       header .navbar .container-fluid .navbar-toggler {
-        background-color: #e16c4e; } }
+        background-color: #e96a4a; } }
     @media screen and (max-width: 600px) {
       header .navbar .container-fluid .navbar-toggler {
         background-color: #f8efc1; } }
@@ -60,7 +60,7 @@ header {
       flex-flow: row wrap;
       justify-content: space-around;
       width: 100%; }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 991px) {
         header .navbar .container-fluid .collapse .navbar-nav {
           flex-flow: column;
           width: 25%; } }
@@ -74,28 +74,28 @@ header {
         font-size: 20px;
         font-family: 'Staatliches', cursive;
         background-color: #f8efc1;
-        border: #384d44 double 3px;
+        border: #3e594c double 3px;
         text-decoration: none;
         text-align: center;
-        color: #384d44; }
+        color: #3e594c; }
         header .navbar .container-fluid .collapse .navbar-nav li .sections:hover {
-          color: #384d44;
+          color: #3e594c;
           text-decoration: none; }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
           header .navbar .container-fluid .collapse .navbar-nav li .sections {
             font-size: 15px;
-            border: solid 2px #384d44; } }
+            border: solid 2px #3e594c; } }
 
 main {
   grid-area: main; }
   @media screen and (max-width: 600px) {
     main {
-      background-color: #384d44; } }
+      background-color: #3e594c; } }
   main section {
     gap: 3px;
     grid-template-areas: "destacados" "card"; }
     main section h2 {
-      color: #384d44;
+      color: #3e594c;
       font-size: 50px;
       font-family: "Staatliches", cursive;
       grid-area: destacados; }
@@ -108,13 +108,13 @@ main {
       margin-top: 1%;
       background-color: #f8efc1;
       width: 90%;
-      border: 10px solid #384d44;
+      border: 10px solid #3e594c;
       height: 40%;
       display: grid;
       grid-template-areas: "cardImg cardTitle btn" "cardImg cardDescription btn";
       grid-template-columns: 2fr 6fr 1fr;
       grid-template-rows: 1fr 2fr; }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 991px) {
         main section .card {
           margin-top: 20px;
           justify-content: center;
@@ -123,7 +123,7 @@ main {
           grid-template-rows: 1fr 2fr 1fr; } }
       @media screen and (max-width: 600px) {
         main section .card {
-          border: #e16c4e solid 4px;
+          border: #e96a4a solid 4px;
           height: 40%;
           margin-left: 13%;
           width: 75%;
@@ -132,7 +132,7 @@ main {
           grid-template-rows: 1fr 3fr 1fr 0fr; } }
       main section .card .cardImg {
         grid-area: cardImg;
-        border: 3px #384d44 solid;
+        border: 3px #3e594c solid;
         width: 100%;
         height: 100%; }
         @media screen and (max-width: 600px) {
@@ -150,7 +150,7 @@ main {
         grid-area: cardTitle;
         font-family: "Staatliches", cursive;
         font-size: 30px; }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
           main section .card .cardTitle {
             font-size: 25px;
             text-decoration: underline; } }
@@ -161,9 +161,11 @@ main {
         grid-area: cardDescription;
         font-family: "Roboto", sans-serif;
         font-size: 20px; }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1200px) {
           main section .card .cardDescription {
-            font-size: 15px;
+            font-size: 15px; } }
+        @media screen and (max-width: 991px) {
+          main section .card .cardDescription {
             margin: 2% 5% 2% 2%; } }
         @media screen and (max-width: 600px) {
           main section .card .cardDescription {
@@ -172,12 +174,12 @@ main {
       main section .card .btnComp {
         display: flex;
         justify-content: center;
-        background-color: #384d44;
+        background-color: #3e594c;
         height: 25%;
         width: 65%;
         margin: 100% 0% -200% 20%;
         grid-area: btn; }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
           main section .card .btnComp {
             width: 60%;
             height: 65%;
@@ -191,7 +193,7 @@ main {
     font-size: 30px; } }
 
 footer {
-  background-color: #384d44;
+  background-color: #3e594c;
   display: flex;
   justify-content: flex-end;
   grid-area: footer;
@@ -218,7 +220,7 @@ footer {
       color: #f8efc1; }
       @media screen and (max-width: 600px) {
         footer .gridFooter h3 {
-          color: #384d44; } }
+          color: #3e594c; } }
     footer .gridFooter ul {
       display: flex;
       flex-flow: row wrap;
@@ -235,9 +237,9 @@ aside {
   grid-area: aside; }
   @media screen and (max-width: 600px) {
     aside {
-      background-color: #384d44; } }
+      background-color: #3e594c; } }
   aside .promos {
-    color: #384d44;
+    color: #3e594c;
     font-size: 50px;
     font-family: "Staatliches", cursive;
     grid-area: promos; }
@@ -245,10 +247,11 @@ aside {
       aside .promos {
         color: #f8efc1; } }
   aside .imgPromo {
+    border: 10px solid #3e594c;
     margin-top: 1%;
     width: 90%;
     height: auto; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       aside .imgPromo {
         width: 80%; } }
 
@@ -263,7 +266,7 @@ aside {
   .car .carousel div div .carouselImg {
     height: auto;
     width: 30%; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       .car .carousel div div .carouselImg {
         height: auto;
         width: 40%; } }
@@ -289,7 +292,7 @@ aside {
   display: grid;
   grid-template-areas: "tituloForm     tituloForm  tituloForm  tituloForm" "nombre         nombre      inputN      inputN" "mail           mail        inputM      inputM" "telefono       telefono    inputT      inputT" "pFormSexo      pFormSexo   pFormSexo   pFormSexo" "divFormH       divFormM    divFormM    divFormO" "inputHombre    inputMujer  inputMujer  inputOtro" "pForm          pForm       select      select" "terminos       terminos    check       check" "comentarios    comentarios textarea    textarea" "reset          reset       enviar      enviar";
   grid-template-columns: 2fr 1fr 1fr 2fr; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     .mainContacto .form {
       margin-left: 25%;
       height: 65%;
@@ -306,9 +309,9 @@ aside {
     grid-area: tituloForm; }
     @media screen and (max-width: 600px) {
       .mainContacto .form .tituloForm {
-        color: #384d44; } }
+        color: #3e594c; } }
   .mainContacto .form .nombre, .mainContacto .form .inputN, .mainContacto .form .mail, .mainContacto .form .inputM, .mainContacto .form .telefono, .mainContacto .form .inputT, .mainContacto .form .pFormSexo, .mainContacto .form .divFormH, .mainContacto .form .inputHombre, .mainContacto .form .divFormM, .mainContacto .form .inputMujer, .mainContacto .form .divFormO, .mainContacto .form .inputOtro, .mainContacto .form .pForm, .mainContacto .form select, .mainContacto .form .terminos, .mainContacto .form .check, .mainContacto .form .comentarios, .mainContacto .form .textarea, .mainContacto .form .enviar, .mainContacto .form .reset {
-    border: #384d44 solid 1px;
+    border: #3e594c solid 1px;
     grid-area: nombre; }
   .mainContacto .form .inputN {
     grid-area: inputN; }
@@ -364,23 +367,23 @@ aside {
     font-size: 50px;
     font-family: "Staatliches", cursive; }
   .asideContacto a .ubicacion {
-    border: #384d44 solid 5px;
+    border: #3e594c solid 5px;
     height: auto;
     width: 70%; }
 
 body {
   height: 100%;
   width: 100%;
-  background-color: #e16c4e; }
+  background-color: #e96a4a; }
   @media screen and (max-width: 600px) {
     body {
-      background-color: #384d44; } }
+      background-color: #3e594c; } }
   body .grillaGeneral {
     display: grid;
     gap: 20px;
     grid-template-areas: "header header" "car car"  "main   aside" "footer footer";
     grid-template-columns: 5fr 2fr; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       body .grillaGeneral {
         grid-template-areas: "header" "car" "aside" "main" "footer";
         grid-template-columns: 1fr; } }

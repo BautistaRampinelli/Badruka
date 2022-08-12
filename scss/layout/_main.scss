@@ -88,8 +88,10 @@ main {
                 grid-area: cardDescription;
                 font-family: $fontSecundary;
                 font-size: 20px;
-                @include tablet {
+                @include notebook {
                     font-size: 15px;
+                }
+                @include tablet {
                     margin: 2% 5% 2% 2%;
                 }
                 @include phone {

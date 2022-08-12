@@ -1,5 +1,11 @@
 @mixin tablet {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin notebook {
+    @media screen and (max-width: 1200px) {
         @content;
     }
 }
