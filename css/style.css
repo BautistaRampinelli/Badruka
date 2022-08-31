@@ -41,7 +41,7 @@ header {
   header .navbar {
     display: flex;
     justify-content: space-evenly;
-    z-index: 2;
+    z-index: 20;
     margin-top: -2%; }
     @media screen and (max-width: 991px) {
       header .navbar {
@@ -127,10 +127,11 @@ main {
           height: 40%;
           margin-left: 13%;
           width: 75%;
-          grid-template-areas: "cardTitle" "cardImg" "btn" "cardDescription";
+          grid-template-areas: "cardTitle" "cardImg" "btn";
           grid-template-columns: 1fr;
-          grid-template-rows: 1fr 3fr 1fr 0fr; } }
+          grid-template-rows: 1fr 3fr 1fr; } }
       main section .card .cardImg {
+        z-index: 50;
         grid-area: cardImg;
         border: 3px #3e594c solid;
         width: 100%;
@@ -139,8 +140,8 @@ main {
           main section .card .cardImg {
             margin-top: 2%; } }
         main section .card .cardImg:hover {
-          transform: scale(2) translateX(100px);
-          transition: all 2s; }
+          transform: scale(2) translate(200px, -70px);
+          transition: all 3s; }
           @media screen and (max-width: 600px) {
             main section .card .cardImg:hover {
               transform: scale(1.5);
@@ -169,8 +170,7 @@ main {
             margin: 2% 5% 2% 2%; } }
         @media screen and (max-width: 600px) {
           main section .card .cardDescription {
-            font-size: 0%;
-            color: transparent; } }
+            display: none; } }
       main section .card .btnComp {
         display: flex;
         justify-content: center;
@@ -187,6 +187,20 @@ main {
         @media screen and (max-width: 600px) {
           main section .card .btnComp {
             margin-top: 6%; } }
+      main section .card .modal .modal-dialog .modal-content .modal-header {
+        background-color: #3e594c; }
+        main section .card .modal .modal-dialog .modal-content .modal-header h5 {
+          font-family: "Staatliches", cursive;
+          color: #f8efc1; }
+      main section .card .modal .modal-dialog .modal-content .modal-body {
+        background-color: #f8efc1;
+        font-family: "Roboto", sans-serif;
+        color: #3e594c; }
+      main section .card .modal .modal-dialog .modal-content .modal-footer {
+        background-color: #3e594c; }
+        main section .card .modal .modal-dialog .modal-content .modal-footer .btn {
+          color: #3e594c;
+          background-color: #f8efc1; }
 
 @media screen and (max-width: 600px) {
   .electrodomesticos {
@@ -254,9 +268,12 @@ aside {
     @media screen and (max-width: 991px) {
       aside .imgPromo {
         width: 80%; } }
+    @media screen and (max-width: 600px) {
+      aside .imgPromo {
+        border: 10px solid #f8efc1; } }
 
 .car {
-  z-index: 1;
+  z-index: 10;
   background-image: url(../images/fondoCarrousel.png);
   background-repeat: no-repeat;
   background-size: cover;

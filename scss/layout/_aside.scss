@@ -20,5 +20,8 @@ aside {
         @include tablet {
             width: 80%;
         }
+        @include phone {
+            border: 10px solid $color-5;
+        }
     }
 }

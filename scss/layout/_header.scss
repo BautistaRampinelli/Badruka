@@ -36,7 +36,7 @@ header {
     .navbar {
         display: flex;
         justify-content: space-evenly;
-        z-index: 2;
+        z-index: 20;
         margin-top: -2%;
         @include tablet {
             margin: -29% 0% 0% 1%;
